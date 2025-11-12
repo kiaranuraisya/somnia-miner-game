@@ -1,36 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Somnia Miner - Demo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Somnia Miner</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Somnia Miner (Demo)</h1>
+    <h1>🌙 Somnia Miner (Demo)</h1>
 
     <div class="wallet">
-      <button id="connectBtn">Connect Wallet (placeholder)</button>
-      <div id="walletAddr">Not connected</div>
+      <button id="connectBtn">🔗 Connect Wallet</button>
+      <div id="WalletAddr">Not connected</div>
     </div>
 
     <div class="stats">
-      <div>Balance SWS: <span id="balance">0</span></div>
-      <div>Pool (fees): <span id="pool">50</span></div>
-      <div>Miners: <span id="miners">0</span></div>
+      <div>💰 Balance SWS <span id="balance">0.00</span></div>
+      <div>🏦 Pool (fees) <span id="pool">50.00</span></div>
+      <div>⚙️ Miners <span id="miners">0</span></div>
     </div>
 
     <div class="actions">
-      <button id="mineBtn">Mine (Click)</button>
-      <button id="buyMiner">Buy Miner (cost 10)</button>
-      <button id="withdrawBtn">Withdraw Rewards</button>
+      <button id="mineBtn">⛏️ Mine (Click)</button>
+      <button id="buyMinerBtn">🤖 Buy Miner (cost 10)</button>
+      <button id="withdrawBtn">💎 Withdraw Rewards</button>
     </div>
 
-    <div class="log" id="log"></div>
-
+    <div id="log"></div>
     <footer>
-      <small>Demo: reward berasal dari <em>pool</em> (simulasi fee). Integrasi Web3 masih perlu ditambahkan.</small>
+      Demo mode — rewards berasal dari pool (simulasi). Integrasi Web3 akan ditambahkan nanti.
     </footer>
   </div>
 
