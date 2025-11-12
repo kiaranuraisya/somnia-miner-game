@@ -1,23 +1,85 @@
-:root{
-  --bg:#0f1221;
-  --card:#151827;
-  --accent:#8b5cf6;
-  --text:#e6eef8;
+/* 🌌 Somnia Miner Game Style (Clean UI) */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #100021, #080010);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
-*{box-sizing:border-box}
-body{
-  margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--text);
-  display:flex;align-items:center;justify-content:center;height:100vh;
+
+.container {
+  width: 90%;
+  max-width: 420px;
+  margin-top: 40px;
+  background: rgba(40, 0, 80, 0.3);
+  border: 1px solid rgba(160, 80, 255, 0.4);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(180, 100, 255, 0.2);
 }
-.container{
-  width:95%;max-width:600px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.03);
+
+h1 {
+  text-align: center;
+  color: #cbb2ff;
+  font-weight: 600;
+  font-size: 1.6em;
 }
-h1{margin:0 0 12px;font-size:20px;color:var(--accent)}
-.wallet{display:flex;gap:10px;align-items:center;margin-bottom:12px}
-button{background:var(--accent);color:#fff;border:0;padding:10px 12px;border-radius:8px;cursor:pointer}
-.stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px}
-.stats > div{background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;flex:1;min-width:140px}
-.actions{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
-.log{background:#06060a;color:#bcd;border-radius:8px;padding:8px;min-height:80px;overflow:auto;font-size:13px}
-footer{margin-top:10px;font-size:12px;color:rgba(255,255,255,0.6)}
+
+.wallet, .stats, .actions {
+  margin: 15px 0;
+}
+
+button {
+  width: 100%;
+  background: linear-gradient(90deg, #7848ff, #b266ff);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  margin-top: 6px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(90deg, #9c6bff, #c287ff);
+}
+
+.stats div {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  margin-top: 10px;
+  color: #a98fff;
+  opacity: 0.8;
+}
+
+#log {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: 10px;
+  height: 120px;
+  overflow-y: auto;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  border: 1px solid rgba(180, 100, 255, 0.25);
+  color: #d5baff;
+}
